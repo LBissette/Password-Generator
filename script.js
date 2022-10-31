@@ -1,7 +1,8 @@
 var passLength = prompt("Pick a number")
 
 // var for super array content
-var symbols = ["~","`","!","@","#","$","%","^","&","*","(",")","-","_","+","=","{","}",":",";","'","<",">",",",".","?","/"]
+var symbols = ["~","`","!","@","#","$","%","^","&","*","(",")","-","_","+","=","{","}","[","]","|",":",";","'","<",">",",",".","?","/"]
+
 var numbers = ["1","2","3","4","5","6","7","8","9","0"];
 var alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 
@@ -14,6 +15,8 @@ var hasUpperCase = confirm("Use Uppercase?")
 // var for super array
 var superArray = [];
 
+// var for password array
+var passwordArray = []
 
 // show criteria selected
 console.log(
@@ -43,12 +46,18 @@ if (hasUpperCase) {
 
 console.log("Super Array: ", superArray)
 
-
-
-
-// TODO:
 // math for random number generator
 
-// creating the password
+for (var i = 0; i < passLength; i++) {
+    var randomNumber = Math.floor(Math.random() * superArray.length)
+    passwordArray.push(superArray[randomNumber])
+}
+
+// merge array into a string, show password
+var finalPassword = passwordArray.join("");
+
+console.log(finalPassword);
+
+// TODO:
 
 // creating restraints
