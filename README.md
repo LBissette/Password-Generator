@@ -9,4 +9,5 @@ Visit the website at [https://lbissette.github.io/Portfolio/] or download the re
 
 ## Credits
 
-Logan Bissette
+Logan Bissette - Javascript
+Trinity Education - HTML & CSS
